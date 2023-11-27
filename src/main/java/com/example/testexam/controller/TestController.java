@@ -11,11 +11,10 @@ import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-
 @RestController
 @AllArgsConstructor
 @RequestMapping("")
-public class GestionCliniqueController {
+public class TestController {
     IServiceClinique serviceClinique;
     IServiceMedecin serviceMedecin;
     IServicePatient servicePatient;
@@ -56,3 +55,4 @@ public class GestionCliniqueController {
     }
 
 }
+

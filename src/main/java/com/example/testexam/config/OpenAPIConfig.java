@@ -1,7 +1,6 @@
-package com.esprit.foyer.Confguration;
+package com.example.testexam.config;
 
 import io.swagger.v3.oas.models.OpenAPI;
-
 import io.swagger.v3.oas.models.info.Contact;
 import io.swagger.v3.oas.models.info.Info;
 import org.springdoc.core.models.GroupedOpenApi;
@@ -9,8 +8,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class SpringDocConfiguration {
-
+public class OpenAPIConfig {
     @Bean
     public OpenAPI SpringFoyerOpenAPI() {
         return new OpenAPI().info(infoAPI());
@@ -23,9 +21,9 @@ public class SpringDocConfiguration {
     }
 
     public Contact contactAPI() {
-        Contact contact = new Contact().name("kamel w kahaw")
-                .email("kamel.benarous@esprit.tn")
-                .url("https://github.com/kamel-benarous/FoyerSpring");
+        Contact contact = new Contact().name("wiem")
+                .email("wiem.benali@esprit.tn")
+                .url("https://github.com/BENALI-WIEM");
         return contact;
     }
 
@@ -38,3 +36,4 @@ public class SpringDocConfiguration {
     }
 
 }
+
